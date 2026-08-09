@@ -1,10 +1,12 @@
-# Lalit Tomar Portfolio
+# Lalit Tomar Modern Portfolio
 
-GitHub Pages ready.
+Upload `index.html` and `profile.jpg` to the root of the GitHub Pages repository.
 
-1. Create a repository named `lalittomar.github.io`.
-2. Upload `index.html`.
-3. GitHub → Settings → Pages → Deploy from branch → main → root.
-4. Open `https://lalittomar.github.io/`.
+Contact details already included:
+- Email: lalittomar7429@gmail.com
+- Phone: +91 97589 95424
+- Instagram: https://www.instagram.com/lalittomar_1
+- LinkedIn: https://www.linkedin.com/in/lalittomar1/
+- WhatsApp: https://wa.link/42u9mx
 
-Replace `YOUR_EMAIL@example.com` in index.html with your email before publishing.
+The portfolio includes animated role text, floating developer-tech elements, animated code card, hover effects and a fixed WhatsApp button.
