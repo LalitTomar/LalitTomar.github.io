@@ -1,82 +1,1048 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Lalit Tomar — Web Developer and WordPress Developer. WordPress, Shopify, PHP, JavaScript and responsive web development portfolio.">
-<meta name="keywords" content="Lalit Tomar, Web Developer, WordPress Developer, Shopify Developer, PHP Developer, JavaScript Developer">
-<meta name="author" content="Lalit Tomar">
-<title>Lalit Tomar | Web Developer & WordPress Developer</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
-:root{--bg:#030711;--panel:#07111f;--panel2:#0a1729;--line:#1a2b44;--text:#f7f9ff;--muted:#93a4bb;--blue:#3182ff;--cyan:#22d3ee;--purple:#9b5cff;--green:#25d366}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 75% 12%,#2463ff20,transparent 25%),radial-gradient(circle at 10% 65%,#9b5cff12,transparent 25%)}body:after{content:"</>  WordPress  PHP  JavaScript  HTML  CSS  Git  Shopify";position:fixed;inset:0;z-index:-2;opacity:.035;color:#67a7ff;font:700 12px/3 monospace;word-spacing:22px;transform:rotate(-8deg) scale(1.4);pointer-events:none}
-a{color:inherit;text-decoration:none}.container{width:min(1180px,92%);margin:auto}.section{padding:85px 0;border-top:1px solid #ffffff08}
-nav{position:sticky;top:0;z-index:100;background:#030711dd;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff0a}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px}.brandmark{font:800 28px/1 Space Grotesk;background:linear-gradient(135deg,#38a3ff,#a855f7);-webkit-background-clip:text;color:transparent;font-style:italic}.brand b{display:block;font-size:15px;letter-spacing:.3px}.brand small{color:#71839c;font-size:9px;text-transform:uppercase;letter-spacing:1px}.menu{display:flex;gap:24px;color:#b8c5d8;font-size:12px}.menu a:hover{color:#fff}.navbtn{padding:10px 16px;border-radius:8px;background:linear-gradient(135deg,#7c3aed,#2563eb);font-size:12px;font-weight:800;box-shadow:0 10px 30px #2563ff22}
-.hero{min-height:680px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:25px;padding:75px 0 55px;position:relative}.hero:before{content:"";position:absolute;left:-100px;top:130px;width:260px;height:260px;border-radius:50%;border:1px solid #3182ff22;box-shadow:0 0 100px #3182ff18;animation:pulse 4s ease-in-out infinite}.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:30px;background:#8b5cf611;border:1px solid #8b5cf633;color:#c4b5fd;font-size:11px}.green-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;box-shadow:0 0 10px #22c55e}
-h1{font:700 clamp(50px,6.5vw,82px)/.98 Space Grotesk;letter-spacing:-4px;margin:18px 0 14px}h1 span{background:linear-gradient(90deg,#36a3ff,#9b5cff);-webkit-background-clip:text;color:transparent}.role{font-size:22px;font-weight:700}.role .typing{color:#5e9cff}.cursor{display:inline-block;width:2px;height:24px;background:#5e9cff;margin-left:5px;vertical-align:-3px;animation:blink .7s infinite}.desc{max-width:650px;color:var(--muted);font-size:14px;margin-top:14px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid #2b3d58;border-radius:8px;font-size:12px;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-3px);border-color:#5577aa}.primary{border:0;background:linear-gradient(135deg,#7c3aed,#2563eb)!important;box-shadow:0 12px 35px #2563ff22}.socials{display:flex;gap:9px;margin-top:18px}.socials a{width:40px;height:40px;border:1px solid #243750;border-radius:8px;display:grid;place-items:center;color:#cdd8e8;transition:.25s}.socials a:hover{border-color:#4c7fff;color:#73a3ff;transform:translateY(-3px)}.icon{width:17px;height:17px;fill:currentColor}
-.visual{height:530px;position:relative;display:flex;align-items:center;justify-content:center}.ring{position:absolute;width:420px;height:420px;border-radius:50%;border:1px solid #3f70ff55;box-shadow:0 0 100px #2563ff2b,inset 0 0 60px #2563ff12;animation:spin 18s linear infinite}.ring:before,.ring:after{content:"";position:absolute;width:8px;height:8px;background:#58a0ff;border-radius:50%;box-shadow:0 0 18px #58a0ff}.ring:before{top:24px;left:90px}.ring:after{right:40px;bottom:90px}.photo{height:500px;width:min(390px,72vw);object-fit:cover;object-position:center top;position:relative;z-index:3;filter:drop-shadow(0 25px 35px #000b);mask-image:linear-gradient(#000 88%,transparent 100%);animation:float 5s ease-in-out infinite}.code-card{position:absolute;z-index:4;right:0;bottom:25px;width:210px;padding:14px;background:#06101deF;border:1px solid #294261;border-radius:10px;box-shadow:0 18px 45px #0008;font:10px/1.8 monospace;color:#8ea5c4;animation:float2 4s ease-in-out infinite}.code-card b{color:#60a5fa}.code-card .green{color:#4ade80}.tech{position:absolute;z-index:5;background:#06101f;border:1px solid #2a4161;border-radius:9px;padding:11px 12px;color:#72a7ff;font:800 10px monospace;box-shadow:0 8px 25px #0008;animation:float2 3s ease-in-out infinite}.t1{left:4%;top:14%}.t2{left:6%;top:38%;animation-delay:.4s}.t3{left:4%;top:67%;animation-delay:.8s}.t4{right:4%;top:17%;animation-delay:.2s}.t5{right:5%;top:43%;animation-delay:.6s}.t6{right:4%;top:69%;animation-delay:1s}
-.eyebrow{font-size:10px;color:#5e9cff;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.title{font:700 29px Space Grotesk;margin:4px 0 20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#091526,#050c16);border:1px solid var(--line);border-radius:14px;padding:26px;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#34527b}.card p{font-size:13px;color:var(--muted)}.stats{display:flex;gap:8px;margin-top:20px}.stat{flex:1;border:1px solid #25364e;border-radius:8px;padding:10px}.stat b{display:block;font-size:18px}.stat small{font-size:9px;color:#7f90a8}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.skill{padding:10px 5px;text-align:center;border:1px solid #263a54;border-radius:8px;background:#06101d;font-size:11px}.skill small{display:block;color:#7f91aa;font-size:9px}.list{display:grid;gap:10px}.list div{font-size:12px;color:#c7d2e1}.list div:before{content:'✓';color:#a78bfa;margin-right:8px}
-.project-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.project{background:#07101e;border:1px solid #22344c;border-radius:12px;overflow:hidden;transition:.3s}.project:hover{transform:translateY(-7px);border-color:#4b70a7;box-shadow:0 18px 45px #0008}.project-img{height:155px;background:linear-gradient(135deg,#18263f,#07101d);display:flex;align-items:flex-end;padding:14px;position:relative;overflow:hidden}.project-img:before{content:"";position:absolute;width:180px;height:180px;border:1px solid #3182ff35;border-radius:50%;right:-55px;top:-75px;box-shadow:0 0 50px #3182ff22}.project-img:after{content:"WEB DEVELOPMENT";position:absolute;top:12px;right:12px;font:800 8px monospace;color:#5689c5}.mock{font:700 18px/1 Space Grotesk;z-index:2}.project-body{padding:15px}.project h3{font-size:15px}.tags{display:flex;gap:5px;margin:8px 0}.tag{font-size:9px;color:#9eb0c7;background:#111d2e;border-radius:5px;padding:4px 6px}.project-link{font-size:11px;color:#72a1ff;font-weight:800}
-.timeline{max-width:850px}.job{position:relative;border-left:1px solid #2b3b54;padding:0 0 30px 24px;margin-left:7px}.job:before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;border-radius:50%;background:#5d83ff;box-shadow:0 0 15px #5d83ff}.job h3{font-size:17px}.company{color:#6f9cff;font-size:13px;font-weight:700}.date{color:#718198;font-size:10px}.job p{color:var(--muted);font-size:12px;margin-top:6px}
-.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.contact-card{background:linear-gradient(120deg,#0a1830,#111128);border:1px solid #293e61;border-radius:15px;padding:32px}.contact-list{display:grid;gap:12px}.contact-item{display:flex;align-items:center;gap:12px;color:#cbd6e6;font-size:12px}.contact-icon{width:38px;height:38px;border:1px solid #29415f;border-radius:8px;display:grid;place-items:center;color:#68a1ff}.contact-item a:hover{color:#70a5ff}.footer{display:flex;justify-content:space-between;padding:25px 0;color:#6e7e94;font-size:10px;border-top:1px solid #ffffff08}
-.whatsapp{position:fixed;left:24px;bottom:24px;width:56px;height:56px;border-radius:50%;background:var(--green);z-index:200;display:grid;place-items:center;box-shadow:0 8px 30px #25d36655;animation:whats 2s infinite}.whatsapp svg{width:29px;height:29px;fill:#fff}.whatsapp:after{content:"Chat with me";position:absolute;left:68px;white-space:nowrap;background:#07111f;border:1px solid #223852;color:#dce6f4;padding:7px 10px;border-radius:6px;font-size:10px;opacity:0;transform:translateX(-6px);transition:.2s;pointer-events:none}.whatsapp:hover:after{opacity:1;transform:none}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{transform:scale(1.1);opacity:.5}}@keyframes whats{0%,100%{box-shadow:0 8px 30px #25d36655}50%{box-shadow:0 8px 40px #25d36699,0 0 0 8px #25d36612}}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.visual{height:480px}.grid3{grid-template-columns:1fr}.projects{grid-template-columns:repeat(2,1fr)}.menu{display:none}.contact{grid-template-columns:1fr}}@media(max-width:600px){h1{font-size:50px}.projects{grid-template-columns:1fr}.visual{height:420px}.photo{height:390px}.ring{width:320px;height:320px}.tech{display:none}.code-card{right:0;bottom:5px}.whatsapp{left:18px;bottom:18px}.whatsapp:after{display:none}.stats{flex-direction:column}.skills{grid-template-columns:repeat(2,1fr)}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lalit Tomar | Web Developer Portfolio — WordPress & Shopify</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Lalit Tomar, Web Developer specializing in high-performance WordPress & Shopify websites, responsive UI, SEO, and custom web solutions.">
+  <meta name="keywords" content="Lalit Tomar, Web Developer, WordPress Developer, Shopify Expert, UI/UX Designer, SEO Specialist, Frontend Developer, Noida Web Developer">
+  <meta name="author" content="Lalit Tomar">
+  
+  <!-- External CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
 </head>
-<body>
-<nav><div class="container nav"><a class="brand" href="#home"><div class="brandmark">LT</div><div><b>LALIT TOMAR</b><small>Web Developer</small></div></a><div class="menu"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div><a class="navbtn" href="#contact">Hire Me ✦</a></div></nav>
+<body id="home">
 
-<main>
-<section class="container hero" id="home"><div>
-<div class="badge"><span class="green-dot"></span> Available for opportunities</div>
-<h1>Hi, I’m<br><span>Lalit Tomar</span></h1>
-<div class="role">I’m a <span class="typing" id="typing">Web Developer</span><span class="cursor"></span></div>
-<p class="desc">I build responsive, user-friendly and high-performing websites using WordPress, PHP, JavaScript and modern web technologies. I turn business ideas into clean digital experiences.</p>
-<div class="actions"><a class="btn primary" href="#projects">View My Work ↗</a><a class="btn" href="#contact">Let's Talk ✈</a></div>
-<div class="socials">
-<a href="https://www.linkedin.com/in/lalittomar1/" target="_blank" aria-label="LinkedIn">in</a>
-<a href="https://www.instagram.com/lalittomar_1" target="_blank" aria-label="Instagram">◎</a>
-<a href="https://wa.link/42u9mx" target="_blank" aria-label="WhatsApp">WA</a>
-<a href="mailto:lalittomar7429@gmail.com" aria-label="Email">✉</a>
-</div></div>
-<div class="visual"><div class="ring"></div><span class="tech t1">WP</span><span class="tech t2">PHP</span><span class="tech t3">JS</span><span class="tech t4">HTML</span><span class="tech t5">CSS</span><span class="tech t6">SHOPIFY</span><img class="photo" src="profile.jpg" alt="Lalit Tomar — Web Developer"><div class="code-card"><b>&lt;developer&gt;</b><br><span>const</span> role = <b>"Web Developer"</b>;<br><span>skills</span> = [<b>WordPress</b>, <b>PHP</b>, <b>JS</b>];<br><span class="green">status</span> = <b>"building..."</b>;<br><b>&lt;/developer&gt;</b></div></div>
-</section>
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
 
-<section class="section" id="about"><div class="container grid3">
-<div class="card"><div class="eyebrow">About Me</div><h2 class="title">Who I Am</h2><p>I’m a Web Developer & WordPress Developer with 2.5+ years of experience building, customizing and maintaining responsive websites. I enjoy solving development challenges and creating websites that are useful, fast and easy to manage.</p><div class="stats"><div class="stat"><b>2.5+</b><small>Years Experience</small></div><div class="stat"><b>50+</b><small>Projects</small></div><div class="stat"><b>30+</b><small>Clients</small></div></div></div>
-<div class="card" id="skills"><div class="eyebrow">Technical Skills</div><h2 class="title">My Toolkit</h2><div class="skills"><div class="skill"><b>WordPress</b><small>CMS</small></div><div class="skill"><b>PHP</b><small>Backend</small></div><div class="skill"><b>JavaScript</b><small>Frontend</small></div><div class="skill"><b>HTML5</b><small>Markup</small></div><div class="skill"><b>CSS3</b><small>Styling</small></div><div class="skill"><b>MySQL</b><small>Database</small></div><div class="skill"><b>jQuery</b><small>JS Library</small></div><div class="skill"><b>Shopify</b><small>E-commerce</small></div><div class="skill"><b>Git / GitHub</b><small>Version Control</small></div></div></div>
-<div class="card"><div class="eyebrow">What I Do</div><h2 class="title">Expertise</h2><div class="list"><div>WordPress Website Development</div><div>Custom Theme & Plugin Development</div><div>Shopify Store Development</div><div>PSD / Figma to WordPress</div><div>Website Speed Optimization</div><div>Website Maintenance & Support</div></div></div>
-</div></section>
+  <!-- Background Particle Network -->
+  <div id="particles-js"></div>
+  
+  <!-- Glowing Background Accents -->
+  <div class="bg-gradient-radial"></div>
+  <div class="bg-gradient-radial-bottom"></div>
 
-<section class="section" id="projects"><div class="container"><div class="project-head"><div><div class="eyebrow">Featured Projects</div><h2 class="title">My Recent Work</h2></div></div><div class="projects">
-<div class="project"><div class="project-img"><div class="mock">EXHIBITS THAT<br>BUILD BRANDS</div></div><div class="project-body"><h3>Castle Booth Builder</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div><a class="project-link" href="http://castleboothbuilder.com/" target="_blank">Visit Website →</a></div></div>
-<div class="project"><div class="project-img"><div class="mock">CRAFTING EXHIBITS<br>THAT LEAVE A MARK</div></div><div class="project-body"><h3>Castle Exhibits</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div><a class="project-link" href="http://castleexhibits.us/" target="_blank">Visit Website →</a></div></div>
-<div class="project"><div class="project-img"><div class="mock">MODULAR DISPLAYS<br>CUSTOM EXHIBITS</div></div><div class="project-body"><h3>Connect Booth Displays</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div><a class="project-link" href="https://www.connectboothdisplays.com/" target="_blank">Visit Website →</a></div></div>
-<div class="project"><div class="project-img"><div class="mock">CONNECTING BRANDS<br>CREATING IMPACT</div></div><div class="project-body"><h3>Connect Exhibit</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div><a class="project-link" href="https://www.connectexhibit.com/" target="_blank">Visit Website →</a></div></div>
-<div class="project"><div class="project-img"><div class="mock">WE DESIGN<br>EXHIBITS THAT IMPACT</div></div><div class="project-body"><h3>Expo Connect Displays</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div><a class="project-link" href="https://www.expoconnectdisplays.com/" target="_blank">Visit Website →</a></div></div>
-<div class="project"><div class="project-img"><div class="mock">EXHIBITS DESIGNED<br>TO INSPIRE</div></div><div class="project-body"><h3>Expo Display Studio</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div><a class="project-link" href="https://www.expodisplaystudio.de/" target="_blank">Visit Website →</a></div></div>
-</div></div></section>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
 
-<section class="section" id="experience"><div class="container"><div class="eyebrow">Experience</div><h2 class="title">Professional Journey</h2><div class="timeline">
-<div class="job"><h3>Web Developer</h3><div class="company">Growth With Tech Pvt. Ltd.</div><div class="date">Nov 2025 – Present</div><p>Website development, WordPress, Shopify, customization, maintenance and digital project work.</p></div>
-<div class="job"><h3>Web Developer</h3><div class="company">Sugo India Travel Services Pvt. Ltd.</div><div class="date">Apr 2025 – Nov 2025</div><p>Website development, customization and ongoing website management.</p></div>
-<div class="job"><h3>Web Developer</h3><div class="company">Webultrasolution Pvt. Ltd.</div><div class="date">Nov 2023 – Jan 2025</div><p>WordPress development, theme customization and responsive website implementation.</p></div>
-</div></div></section>
+  <!-- Header / Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom py-3">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom text-gradient" href="#home" id="nav-logo">Lalit Tomar</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-2">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="#home" id="nav-link-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#about" id="nav-link-about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#services" id="nav-link-services">Services</a>
+          </li>
 
-<section class="section" id="contact"><div class="container contact"><div class="contact-card"><div class="eyebrow">Contact</div><h2 class="title">Let’s build something together.</h2><p style="color:var(--muted);font-size:13px;margin-bottom:22px">Open to Web Development, WordPress, Shopify and freelance/project opportunities.</p><div class="actions"><a class="btn primary" href="mailto:lalittomar7429@gmail.com">Email Me</a><a class="btn" href="https://wa.link/42u9mx" target="_blank">WhatsApp Me</a></div></div>
-<div class="contact-card"><div class="eyebrow">Get In Touch</div><h2 class="title">Contact Details</h2><div class="contact-list">
-<div class="contact-item"><div class="contact-icon">✉</div><a href="mailto:lalittomar7429@gmail.com">lalittomar7429@gmail.com</a></div>
-<div class="contact-item"><div class="contact-icon">☎</div><a href="tel:+919758995424">+91 97589 95424</a></div>
-<div class="contact-item"><div class="contact-icon">in</div><a href="https://www.linkedin.com/in/lalittomar1/" target="_blank">linkedin.com/in/lalittomar1</a></div>
-<div class="contact-item"><div class="contact-icon">◎</div><a href="https://www.instagram.com/lalittomar_1" target="_blank">instagram.com/lalittomar_1</a></div>
-</div></div></div></section>
-</main>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#portfolio" id="nav-link-portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#why-hire-me" id="nav-link-hire">Why Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#testimonials" id="nav-link-testimonials">Reviews</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn-custom btn-gradient text-decoration-none" href="#contact" id="nav-btn-contact">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<a class="whatsapp" href="https://wa.link/42u9mx" target="_blank" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.57 0 .27 5.3.27 11.82c0 2.08.54 4.11 1.57 5.9L.18 24l6.45-1.69a11.8 11.8 0 0 0 5.45 1.34h.01c6.51 0 11.81-5.3 11.81-11.82 0-3.16-1.23-6.13-3.38-8.35zM12.09 21.63h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.83 1 1.02-3.73-.23-.38a9.8 9.8 0 1 1 8.41 4.69zm5.38-7.35c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.65.15-.19.29-.74.94-.91 1.13-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.3-1.43-.85-.76-1.43-1.7-1.6-1.99-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.48.1-.2.05-.37-.02-.52-.07-.15-.65-1.56-.89-2.14-.23-.56-.47-.49-.65-.5h-.55c-.19 0-.5.07-.76.37-.26.29-1 0.98-1 2.39s1.03 2.77 1.17 2.96c.15.2 2.02 3.09 4.9 4.33.69.3 1.22.48 1.64.61.69.22 1.32.19 1.82.12.55-.08 1.72-.7 1.96-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34z"/></svg></a>
-<footer><div class="container footer"><span>© 2026 Lalit Tomar. All rights reserved.</span><span>Web Developer · WordPress Developer</span></div></footer>
-<script>
-const words=['Web Developer','WordPress Developer','Shopify Developer','Frontend Developer'];let i=0,j=0,del=false;const el=document.getElementById('typing');function type(){const w=words[i];el.textContent=del?w.slice(0,j--):w.slice(0,j++);if(!del&&j===w.length+1){del=true;setTimeout(type,1100);return}if(del&&j<0){del=false;i=(i+1)%words.length;j=0}setTimeout(type,del?45:75)}type();
-</script>
-</body></html>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Hero Text -->
+        <div class="col-lg-6 text-start" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-tagline text-gradient mb-2">Hello 👋</div>
+          <h1 class="hero-title text-white">I'm <span class="text-gradient">Lalit Tomar</span></h1>
+          <h2 class="hero-subtitle mb-3 text-white"> Web Developer</h2>
+          <div class="typing-container">
+            <span class="typing-text" id="typing-element"></span>
+          </div>
+          <p class="text-muted-custom mt-4 mb-5 fs-5">
+            I specialize in designing and building modern, high-converting WordPress and Shopify websites. Let's turn your digital ideas into profitable realities.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn-custom btn-gradient text-decoration-none" id="btn-hire">Hire Me</a>
+            <a href="#portfolio" class="btn-custom btn-outline-custom text-decoration-none" id="btn-projects">View Projects</a>
+            <a href="assets/Lalit_Tomar_Resume.pdf" download="Lalit_Tomar_Resume.pdf" class="btn-custom btn-outline-custom text-decoration-none" id="btn-resume"><i class="fa-solid fa-download"></i> Resume</a>
+          </div>
+        </div>
+        <!-- Hero Image (Right Side) -->
+        <div class="col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+          <div class="hero-image-wrapper">
+            <!-- Background Blob -->
+            <div class="blob-bg"></div>
+            <!-- Behind Image Circle -->
+            <div class="gradient-circle"></div>
+            <!-- Professional portrait picture -->
+            <img src="https://atendra.growthwithtech.com/images/avatar.jpg" alt="Lalit Tomar Professional Portrait" class="avatar-img">
+            
+            <!-- Floating Tech Icons -->
+            <div class="floating-tech-icon icon-wp" title="WordPress"><i class="fa-brands fa-wordpress"></i></div>
+            <div class="floating-tech-icon icon-shopify" title="Shopify"><i class="fa-brands fa-shopify"></i></div>
+            <div class="floating-tech-icon icon-html" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+            <div class="floating-tech-icon icon-css" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="floating-tech-icon icon-js" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+            <div class="floating-tech-icon icon-elementor" title="Elementor"><i class="fa-solid fa-cube"></i></div>
+            <div class="floating-tech-icon icon-woo" title="WooCommerce"><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <span class="section-tagline">Who Am I?</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="fs-5 text-white mb-4">
+            Hi, I'm Lalit Tomar, a passionate Web Developer with 3+ years of professional experience in creating high-performance websites.
+          </p>
+          <p class="text-muted-custom mb-4">
+            I specialize in designing modern, responsive, SEO-friendly, and conversion-focused digital experiences that help businesses grow online. Throughout my career, I have successfully delivered 130+ websites across industries including Fashion, Healthcare, Corporate, Real Estate, Education, and E-commerce.
+          </p>
+          <p class="text-muted-custom mb-5">
+            My goal is simple: <strong>Build beautiful websites that generate real business results.</strong>
+          </p>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="glass-panel experience-counter-card h-100">
+                <div class="counter-num" data-target="3" data-suffix="+">0</div>
+                <div class="counter-label">Years Experience</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-panel experience-counter-card h-100">
+                <div class="counter-num" data-target="130" data-suffix="+">0</div>
+                <div class="counter-label">Projects Completed</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-panel experience-counter-card h-100">
+                <div class="counter-num" data-target="100" data-suffix="+">0</div>
+                <div class="counter-label">Happy Clients</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-panel experience-counter-card h-100">
+                <div class="counter-num" data-target="100" data-suffix="%">0</div>
+                <div class="counter-label">% Responsive Design</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section -->
+  <section class="section-padding" id="services">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">My Offerings</span>
+        <h2 class="section-title">My Services</h2>
+      </div>
+      <div class="row g-4 g-lg-5">
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="glass-panel service-card gradient-border-box">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3>Search Engine Optimization</h3>
+            <p class="text-muted-custom">
+              Boost Google rankings and organic traffic with keyword research, technical audits, and performance tuning.
+            </p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="glass-panel service-card gradient-border-box">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Website Development</h3>
+            <p class="text-muted-custom">
+              Fast, responsive, secure WordPress & Shopify websites built to convert visitors into loyal clients.
+            </p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="glass-panel service-card gradient-border-box">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>App Development</h3>
+            <p class="text-muted-custom">
+              Custom iOS and Android apps crafted with scalable architecture, fluid animations, and modern UI.
+            </p>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="glass-panel service-card gradient-border-box">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p class="text-muted-custom">
+              High-ROI Google & Meta ad campaigns optimized for lead generation, branding, and sales.
+            </p>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="glass-panel service-card gradient-border-box">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <h3>Social Media Marketing</h3>
+            <p class="text-muted-custom">
+              Engaging social campaigns designed to grow your community, build trust, and drive brand sales.
+            </p>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <div class="glass-panel service-card gradient-border-box">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Software Development</h3>
+            <p class="text-muted-custom">
+              Tailored business automation software built to optimize daily operations and boost workflow efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section-padding" id="skills">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">My Stack</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-container" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Badges -->
+        <div class="skill-badge"><i class="fa-brands fa-wordpress text-primary"></i> WordPress</div>
+        <div class="skill-badge"><i class="fa-solid fa-cart-shopping text-info"></i> WooCommerce</div>
+        <div class="skill-badge"><i class="fa-solid fa-cube text-danger"></i> Elementor</div>
+        <div class="skill-badge"><i class="fa-brands fa-shopify text-success"></i> Shopify</div>
+        <div class="skill-badge"><i class="fa-solid fa-droplet text-warning"></i> Liquid</div>
+        <div class="skill-badge"><i class="fa-brands fa-html5 text-danger"></i> HTML5</div>
+        <div class="skill-badge"><i class="fa-brands fa-css3-alt text-primary"></i> CSS3</div>
+        <div class="skill-badge"><i class="fa-brands fa-js text-warning"></i> JavaScript</div>
+        <div class="skill-badge"><i class="fa-brands fa-php text-secondary"></i> PHP</div>
+        <div class="skill-badge"><i class="fa-brands fa-laravel text-danger"></i> Laravel</div>
+        <div class="skill-badge"><i class="fa-solid fa-database text-warning"></i> MySQL</div>
+        <div class="skill-badge"><i class="fa-solid fa-magnifying-glass text-success"></i> SEO</div>
+        <div class="skill-badge"><i class="fa-solid fa-gauge-high text-info"></i> Speed Optimization</div>
+        <div class="skill-badge"><i class="fa-solid fa-mobile-screen text-light"></i> Responsive Design</div>
+        <div class="skill-badge"><i class="fa-brands fa-figma text-danger"></i> Figma</div>
+        <div class="skill-badge"><i class="fa-solid fa-palette text-info"></i> Canva</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Process Section -->
+  <section class="section-padding" id="process">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">How I Work</span>
+        <h2 class="section-title">Development Process</h2>
+      </div>
+      <div class="process-flow mt-5" data-aos="fade-up" data-aos-duration="1200">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <span class="process-step-num">01</span>
+          <span class="process-step-title">Discovery</span>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <!-- Step 2 -->
+        <div class="process-step">
+          <span class="process-step-num">02</span>
+          <span class="process-step-title">Planning</span>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <!-- Step 3 -->
+        <div class="process-step">
+          <span class="process-step-num">03</span>
+          <span class="process-step-title">UI Design</span>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <!-- Step 4 -->
+        <div class="process-step">
+          <span class="process-step-num">04</span>
+          <span class="process-step-title">Development</span>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <!-- Step 5 -->
+        <div class="process-step">
+          <span class="process-step-num">05</span>
+          <span class="process-step-title">Testing</span>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <!-- Step 6 -->
+        <div class="process-step">
+          <span class="process-step-num">06</span>
+          <span class="process-step-title">Launch</span>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <!-- Step 7 -->
+        <div class="process-step">
+          <span class="process-step-num">07</span>
+          <span class="process-step-title">Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section (Featured Projects Slider) -->
+  <section class="section-padding" id="portfolio">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">My Creations</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      
+      <!-- Swiper Slider wrapper -->
+      <div class="portfolio-slider-container swiper" data-aos="fade-up" data-aos-duration="1200">
+        <div class="swiper-wrapper">
+          <!-- Project Card: Castle Exhibits -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-overlay">
+                </div>
+                <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fcastleexhibits.us%2F?w=1200&h=700" alt="Castle Exhibits WordPress Project Mockup" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Castle Exhibits</h3>
+                  <p class="project-desc">A professional exhibition and trade show website built on WordPress, focused on custom exhibit solutions, lead generation, responsive design, and a strong service-driven user experience.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">SEO</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="http://castleexhibits.us/" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card: Castle Booth Builder -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-overlay">
+                </div>
+                <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.castleboothbuilder.com%2F?w=1200&h=700" alt="Castle Booth Builder WordPress Project Mockup" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Castle Booth Builder</h3>
+                  <p class="project-desc">A conversion-focused WordPress website for an exhibition stand and booth builder, presenting custom booth solutions, services, locations, portfolio work, and quote-generation journeys.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">Responsive</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.castleboothbuilder.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card: Connect Exhibit -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-overlay">
+                </div>
+                <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.connectexhibit.com%2F?w=1200&h=700" alt="Connect Exhibit WordPress Project Mockup" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Connect Exhibit</h3>
+                  <p class="project-desc">A modern WordPress trade show website built for a US exhibition brand, highlighting custom booth design, rentals, fabrication, experiential exhibits, and lead-focused calls to action.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">SEO</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.connectexhibit.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card: Connect Booth Displays -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-overlay">
+                </div>
+                <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.connectboothdisplays.com%2F?w=1200&h=700" alt="Connect Booth Displays WordPress Project Mockup" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Connect Booth Displays</h3>
+                  <p class="project-desc">A responsive WordPress exhibition website showcasing custom, modular, rental, and experiential stand solutions with location-focused content and enquiry journeys.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">SEO</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.connectboothdisplays.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card: Expo Display Studio -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-overlay">
+                </div>
+                <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.expodisplaystudio.com%2F?w=1200&h=700" alt="Expo Display Studio WordPress Project Mockup" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Expo Display Studio</h3>
+                  <p class="project-desc">A polished WordPress website for an exhibition stand company, presenting custom, modular, rental, and experiential display services with enquiry-focused conversion paths.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">SEO</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.expodisplaystudio.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card: Indomeals -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Mockup image -->
+                <img src="https://atendra.growthwithtech.com/images/indomeals.png" alt="Indomeals Shopify Store Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Indomeals</h3>
+                  <p class="project-desc">A premium ready-to-eat Indian food e-commerce storefront built on Shopify, featuring customizable meal combos, item constraints, and conversion-optimized checkouts.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">Shopify</span>
+                    <span class="tech-badge">Liquid</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">CSS3</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.indomeals.us/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card: Khayat Clothing -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/khaytclothing.png" alt="Khayat Clothing Shopify Store Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Khayat Clothing</h3>
+                  <p class="project-desc">A premium UK fashion and apparel brand storefront built on Shopify, offering bespoke layout integrations, speed tuning, and cart funnel optimizations.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">Shopify</span>
+                    <span class="tech-badge">Liquid</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">CSS3</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://khayatclothing.co.uk/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card: Orak Living -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/orakliving.png" alt="Orak Living Shopify Store Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Orak Living</h3>
+                  <p class="project-desc">A premium sustainable home decor and lifestyle e-commerce store built on Shopify, featuring clean minimalist design grids, cart upsells, and responsive layouts.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">Shopify</span>
+                    <span class="tech-badge">Liquid</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">CSS3</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://orakliving.com/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 1: Rickytasha -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/rickytasha.png" alt="Rickytasha Shopify Store Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Rickytasha</h3>
+                  <p class="project-desc">A premium E-commerce platform built on Shopify, featuring high-speed product catalog browsing, custom checkout optimization, and interactive catalog filters.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">Shopify</span>
+                    <span class="tech-badge">Liquid</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">CSS3</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.rickytasha.in/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          
+          <!-- Project Card 4: Tria Epic -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/triaepic.png" alt="Tria Epic WordPress Project Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Tria Epic</h3>
+                  <p class="project-desc">A responsive healthcare portal designed and built on WordPress, featuring custom appointment scheduling, service directories, and speed optimizations.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">Speed Optimization</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://triaepic.com/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 5: Growth With Tech -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/growthwithtech.png" alt="Growth With Tech WordPress Project Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Growth With Tech</h3>
+                  <p class="project-desc">A premium marketing and growth agency portal designed and built on WordPress, featuring conversion-optimized layouts and lead generation funnel integrations.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">SEO</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://growthwithtech.com/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card: Hanfi Foundation -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/hanfifoundation.png" alt="Hanfi Foundation Laravel Project Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Hanfi Foundation</h3>
+                  <p class="project-desc">A custom web portal designed and developed in Laravel for Hanfi Foundation (NGO), facilitating digital donations, social project tracking, and member registrations.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://hanfifoundation.org/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card: Stylehub -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <!-- Project image -->
+                <img src="https://atendra.growthwithtech.com/images/stylehub.png" alt="Stylehub Laravel Store Mockup" class="project-img">
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3 class="project-title text-white">Stylehub</h3>
+                  <p class="project-desc">A custom multi-vendor e-commerce store built on Laravel, featuring advanced merchant dashboards, inventory management, secure checkouts, and custom API billing.</p>
+                  <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="https://store.growthwithtech.com/public/" target="_blank" class="project-link-btn"><i class="fa-solid fa-link"></i> Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Swiper navigation & pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+<!-- Why Hire Me Section -->
+  <section class="section-padding" id="why-hire-me">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">My Value Proposition</span>
+        <h2 class="section-title">Why Hire Me</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1: Modern UI -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Modern UI</h3>
+              <p class="hire-card-desc">Sleek, eye-catching, and up-to-date interface designs customized to reflect your unique brand identity.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Fast Loading -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Fast Loading</h3>
+              <p class="hire-card-desc">Optimized code structure and media assets ensuring outstanding performance and higher retention rates.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: SEO Friendly -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">SEO Friendly</h3>
+              <p class="hire-card-desc">Semantic HTML and optimization configurations allowing search engines to discover and rank your website easily.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4: Mobile Responsive -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Mobile Responsive</h3>
+              <p class="hire-card-desc">Fluid layouts that look absolutely beautiful on all screen sizes, from mobile phones to high-res displays.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5: Pixel Perfect -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Pixel Perfect</h3>
+              <p class="hire-card-desc">Meticulous implementation translating designs to active websites without compromising spacing or alignments.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6: Clean Code -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Clean Code</h3>
+              <p class="hire-card-desc">Adhering to high development standardizations, enabling lightweight maintenance and smooth features scalability.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7: Easy Admin Panel -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Easy Admin Panel</h3>
+              <p class="hire-card-desc">Intuitive custom setups for WordPress/Shopify, allowing you to manage layout settings without coding.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8: Lifetime Support -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Lifetime Support</h3>
+              <p class="hire-card-desc">Always available to answer questions, debug minor issues, and keep your software environment stable.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9: Conversion Focused -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+          <div class="glass-panel hire-grid-card">
+            <div class="hire-check-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <h3 class="hire-card-title">Conversion Focused</h3>
+              <p class="hire-card-desc">Strategic placements of action-triggers (CTAs) guiding website traffic straight into your lead pipeline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section -->
+  <section class="section-padding" id="testimonials">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">Client Feedback</span>
+        <h2 class="section-title">Testimonials</h2>
+      </div>
+      <!-- Swiper Slider wrapper for Reviews -->
+      <div class="testimonials-slider-container swiper mt-4" data-aos="fade-up" data-aos-duration="1200">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="glass-panel testimonial-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="test-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-text">
+                  "Absolutely brilliant work! Lalit built our custom Shopify store and optimized it for lightning-fast speeds. Our conversion rate has improved significantly. Very responsive developer."
+                </p>
+              </div>
+              <div class="test-author-group mt-4">
+                <div class="test-author-avatar">
+                  <div class="test-author-avatar-img d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 0.95rem; background: var(--primary-gradient);">RP</div>
+                </div>
+                <div>
+                  <span class="test-author-name d-block">Rajesh Patel</span>
+                  <span class="test-author-title">E-commerce Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="glass-panel testimonial-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="test-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-text">
+                  "Lalit is a highly skilled developer. He delivered a complex WordPress portal for us under a tight deadline. The speed optimization and basic SEO settings were spot on."
+                </p>
+              </div>
+              <div class="test-author-group mt-4">
+                <div class="test-author-avatar">
+                  <div class="test-author-avatar-img d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 0.95rem; background: var(--primary-gradient);">AS</div>
+                </div>
+                <div>
+                  <span class="test-author-name d-block">Amit Sharma</span>
+                  <span class="test-author-title">Digital Agency Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="glass-panel testimonial-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="test-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-text">
+                  "Outstanding Laravel development! He built our NGO portal with a secure donation system and an extremely user-friendly admin dashboard. Highly recommended."
+                </p>
+              </div>
+              <div class="test-author-group mt-4">
+                <div class="test-author-avatar">
+                  <div class="test-author-avatar-img d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 0.95rem; background: var(--primary-gradient);">PG</div>
+                </div>
+                <div>
+                  <span class="test-author-name d-block">Pooja Gupta</span>
+                  <span class="test-author-title">NGO Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide">
+            <div class="glass-panel testimonial-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="test-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-text">
+                  "Very professional and supportive. He fixed all our WordPress site speed issues and SEO keyword setups. His clean code structure is a big plus."
+                </p>
+              </div>
+              <div class="test-author-group mt-4">
+                <div class="test-author-avatar">
+                  <div class="test-author-avatar-img d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 0.95rem; background: var(--primary-gradient);">SK</div>
+                </div>
+                <div>
+                  <span class="test-author-name d-block">Sanjay Kumar</span>
+                  <span class="test-author-title">Real Estate CEO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 5 -->
+          <div class="swiper-slide">
+            <div class="glass-panel testimonial-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="test-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-text">
+                  "We hired Lalit for our multi-vendor custom marketplace. His database designs in MySQL are highly scalable and the page rendering speed is incredible."
+                </p>
+              </div>
+              <div class="test-author-group mt-4">
+                <div class="test-author-avatar">
+                  <div class="test-author-avatar-img d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 0.95rem; background: var(--primary-gradient);">DN</div>
+                </div>
+                <div>
+                  <span class="test-author-name d-block">Divya Nair</span>
+                  <span class="test-author-title">Retail Brand Manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 6 -->
+          <div class="swiper-slide">
+            <div class="glass-panel testimonial-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="test-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-text">
+                  "Excellent custom Laravel software and app development. He set up the server deployment, payment API, and dashboard features perfectly. A premium development partner."
+                </p>
+              </div>
+              <div class="test-author-group mt-4">
+                <div class="test-author-avatar">
+                  <div class="test-author-avatar-img d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 0.95rem; background: var(--primary-gradient);">VS</div>
+                </div>
+                <div>
+                  <span class="test-author-name d-block">Vikram Singh</span>
+                  <span class="test-author-title">Tech Startup Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+        <span class="section-tagline">Start Collaboration</span>
+        <h2 class="section-title">Let's Build Something Amazing Together</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Contact details -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <div class="glass-panel contact-info-card d-flex flex-column justify-content-center">
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91 9758995424</div>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">Lalittomar7429@gmail.com</div>
+              </div>
+            </div>
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value"> Noida, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Call-to-action Contact Buttons -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="glass-panel contact-info-card d-flex flex-column justify-content-center align-items-center gap-4">
+            <h4 class="text-center text-white mb-3">Quick Connect Options</h4>
+            <a href="tel:+91 9758995424" class="btn-custom btn-gradient w-100 justify-content-center text-decoration-none" id="btn-call">
+              <i class="fa-solid fa-phone-volume"></i> Call Now
+            </a>
+            <a href="https://wa.link/z5m0l6" target="_blank" class="btn-custom btn-outline-custom w-100 justify-content-center text-decoration-none" id="btn-whatsapp" style="border-color: #25D366; color: #25D366;">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+            </a>
+            <a href="mailto:Lalittomar7429@gmail.com" class="btn-custom btn-outline-custom w-100 justify-content-center text-decoration-none" id="btn-email">
+              <i class="fa-solid fa-paper-plane"></i> Email Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container text-center">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-md-4 text-md-start text-center">
+          <h3 class="footer-logo text-gradient mb-2">Lalit Tomar</h3>
+          <span class="text-muted-custom">Web Developer</span>
+        </div>
+        <div class="col-md-4 text-center">
+        </div>
+        <div class="col-md-4 text-md-end text-center">
+          <div class="footer-social-links justify-content-center justify-content-md-end mb-3">
+            <a href="https://www.linkedin.com/in/lalittomar1/" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary opacity-25 my-4">
+      <p class="copyright-text mb-0">&copy; 2026 Lalit Tomar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External Script Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
