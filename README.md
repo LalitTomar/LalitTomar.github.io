@@ -1,6 +1,6 @@
 # Lalit Tomar Modern Portfolio
 
-Upload `index.html` and `profile.jpg` to the root of the GitHub Pages repository.
+Upload `index.html` , style.css, script.js and `profile.jpg` to the root of the GitHub Pages repository.
 
 Contact details already included:
 - Email: lalittomar7429@gmail.com
